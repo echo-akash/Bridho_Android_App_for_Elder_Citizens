@@ -20,7 +20,7 @@ public class MedicineAlarmReceiver extends BroadcastReceiver {
             NotificationCompat.Builder builder=new NotificationCompat.Builder(arg0)
                     .setSmallIcon(R.drawable.ic_launcher_background)
                     .setContentTitle("Take your Medicine!!")
-                    .setContentText("Visit "+docname+".")
+                    .setContentText("Collect Medicine "+docname+".")
 
                     .setAutoCancel(true);
             notificationManager.notify(100,builder.build());

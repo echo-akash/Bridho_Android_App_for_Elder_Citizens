@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddAppointment"
+    android:background="@drawable/b1"
     android:orientation="vertical">
 
     <TextView

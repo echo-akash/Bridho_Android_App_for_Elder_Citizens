@@ -189,13 +189,13 @@ public class AddMedicine extends AppCompatActivity {
         toastMessage("Alarm set at" + " " +year +" "+ month +" "+ day +" "+ hour +" "+ minute);
 
         Intent intent = new Intent(AddMedicine.this,MedicineAlarmReceiver.class);
-        toastMessage("1");
+        //toastMessage("1");
         intent.setAction("MY_NOTIFICATION_MESSAGE");
-        toastMessage("2");
+        //toastMessage("2");
         PendingIntent pendingIntent=PendingIntent.getBroadcast(getApplicationContext(),100,intent,PendingIntent.FLAG_UPDATE_CURRENT);
-        toastMessage("3");
+        //toastMessage("3");
         AlarmManager alarmManager=(AlarmManager) getSystemService(ALARM_SERVICE);
-        toastMessage("4");
+        //toastMessage("4");
         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),AlarmManager.INTERVAL_DAY,pendingIntent);
 
     }
